@@ -11,3 +11,8 @@ def test_blogs():
     response = client.get("/blogs")
     assert response.status_code == 200
     assert response.json() == {"message": "List of blogs"}
+    
+def test_abourt():
+    response = client.get("/about")
+    assert response.status_code == 200
+    assert response.json() == {"message": "About page"}
