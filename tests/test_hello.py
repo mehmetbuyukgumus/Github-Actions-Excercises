@@ -12,7 +12,7 @@ def test_blogs():
     assert response.status_code == 200
     assert response.json() == {"message": "List of blogs"}
     
-def test_abourt():
+def test_about():
     response = client.get("/about")
     assert response.status_code == 200
     assert response.json() == {"message": "About page"}
